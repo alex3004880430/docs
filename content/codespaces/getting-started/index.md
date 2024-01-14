@@ -1,15 +1,11 @@
----
-title: 'Getting started with {% data variables.product.prodname_github_codespaces %}'
-shortTitle: Getting started
-intro: 'Learn how to get started with {% data variables.product.prodname_github_codespaces %}, then find out more about how a codespace works.'
-versions:
-  fpt: '*'
-  ghec: '*'
-redirect_from:
-  - /codespaces/getting-started-with-codespaces
-children:
-  - /quickstart
-  - /understanding-the-codespace-lifecycle
-  - /deep-dive
----
+import hashlib
 
+roulette_hash = "DF1A65C1A4357A70489B3BEB4352906D"
+
+# Преобразуем хеш в число
+hash_number = int(roulette_hash, 16)
+
+# Получаем последние 2 символа хеша
+last_two_digits = hash_number % 100
+
+print("Случайное число: {}".format(last_two_digits))
